@@ -1,18 +1,13 @@
 object Main extends App {
-  println( new optionalProjectUserInfo)
-  println("this is the new line added ")
-  println( new optionalProjectUserInfo(location = "lille"))
-  println( new optionalProjectUserInfo(age = 35 , location = "Lille"))
-}
-object optionalProjectUserInfo {
-  val unknownlocation = ""
-  val unknownage = -1
-  val unknownwebsite = ""
-}
+  println("start the first app")
+  val mathlib = new MathLib()
+  val factorial : Int = mathlib.factorial(6)
+  println(factorial)
 
-class optionalProjectUserInfo(
-  location : String = optionalProjectUserInfo.unknownlocation,
-  age : Int = optionalProjectUserInfo.unknownage,
-  webSite : String = optionalProjectUserInfo.unknownwebsite
-)
-
+  val c1: Char = 'B'
+  println(c1)
+  val c2: Char = 66.toChar
+  println(c2)
+  val c3: Char = '\u0041'
+  println(c3)
+}

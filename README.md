@@ -1,8 +1,18 @@
-## sbt project compiled with Scala 3
+## recap of the chapter 2
 
-### Usage
+1 - variable definition 
+    val : immutable 
+    var : mutable
 
-This is a normal sbt project. You can compile code with `sbt compile`, run it with `sbt run`, and `sbt console` will start a Scala 3 REPL.
+    syntax : val "name" : Type = "Value"
 
-For more information on the sbt-dotty plugin, see the
-[scala3-example-project](https://github.com/scala/scala3-example-project/blob/main/README.md).
+2 - Method declaration 
+    
+    def name(params,) : returnType = {
+
+    }
+
+3 - Nested Method Definition
+    this can be done by defining a function inside another function 
+
+
