@@ -5,4 +5,5 @@ class MathLib {
         else
             n * factorial(n-1)
     }
+    def tuple_constuct(x:Int, y:String, z:Boolean) = (x, y, z)
 }
