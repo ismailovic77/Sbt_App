@@ -15,3 +15,9 @@
 3 - Nested Method Definition
     this can be done by defining a function inside another function 
 
+4 - Litterals :
+    val V: Int =
+    val V: Char = 
+    val V: Boolean = {true, false}
+     
+

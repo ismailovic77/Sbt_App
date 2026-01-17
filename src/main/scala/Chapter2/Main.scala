@@ -1,31 +1,17 @@
+package Chapter2
+import java.io._
+
 object Main extends App {
   println("start the first app")
-  val mathlib = new MathLib()
-  val factorial : Int = mathlib.factorial(6)
+  val chap2 = new Chapter_2()
+  val factorial : Int = chap2.factorial(6)
   println(factorial)
 
-  val c1: Char = 'B'
-  println(c1)
-  val c2: Char = 66.toChar
-  println(c2)
-  val c3: Char = '\u0041'
-  println(c3)
-
-  val S:String = " Programming\nScala "
-  println(S)
-  val S2: String = """ Programmnig\nScala"""
-
-  val t = mathlib.tuple_constuct(1, "Ismail", true)
-  val (t1, t2, t3) = mathlib.tuple_constuct(1, "Ismail", true)
+  val t = chap2.tuple_constuct(1, "Ismail", true)
+  val (t1, t2, t3) = chap2.tuple_constuct(1, "Ismail", true)
   println(t2)
 
-  //Options , Some , None
-
-  val CountriesCapital : Map[String, String]= Map(
-    "Maroc" -> "Rabat",
-    "Tunisie" -> "Tunis",
-    "France" -> "Paris"
-  )
+  val CountriesCapital = chap2.opt_some.CountriesCapital
 
   println("********************************************")
   println("\n")
@@ -43,8 +29,12 @@ object Main extends App {
   println("\n")
 
   val input_email : List[String] = List("ismail@gmail.com", null, "", "true@email.com")
-  def toOpt(input_feild: String) : Option[String] = Option(input_feild).filter(_.nonEmpty)
-  val emails : List[Option[String]]= input_email.map((x: String) => toOpt(x))
-  
+  val emails : List[Option[String]]= input_email.map((x: String) => chap2.opt_some.toOpt(x))
+  println(emails)
   emails.foreach(email => println(email.getOrElse("Unknown")))
+
+  println("************* Abstract and parametrized classes ************")
+
+  println( new StringBulkReader("Hello from the string reader function").read)
+  println( new FileBulkReader(new File("src/main/scala/Chapter2/test.txt")).read)
 }

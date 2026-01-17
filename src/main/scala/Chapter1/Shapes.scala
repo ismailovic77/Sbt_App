@@ -1,4 +1,4 @@
-package shapes 
+package Chapter1
     
 import akka.actor.{Actor, ActorSystem, Props}
 
