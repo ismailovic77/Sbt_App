@@ -8,9 +8,5 @@ class Chapter_3 (val value : Int){
         println( 1 .+(2)) 
     }
 
-    def add(x: Int) = {
-        value + x
-    }
-
 
 }
