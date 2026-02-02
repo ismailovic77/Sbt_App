@@ -1,23 +1,7 @@
-## recap of the chapter 2
+## recap of the chapter 3
 
-1 - variable definition 
-    val : immutable 
-    var : mutable
-
-    syntax : val "name" : Type = "Value"
-
-2 - Method declaration 
-    
-    def name(params,) : returnType = {
-
-    }
-
-3 - Nested Method Definition
-    this can be done by defining a function inside another function 
-
-4 - Litterals :
-    val V: Int =
-    val V: Char = 
-    val V: Boolean = {true, false}
-     
+1 - Operators , infix , postfix 
+    * operators in scala are like methods 
+    * infix : when a method have only one argument , you can drop the parentheses and the . when calling it (best used with operators like + - etc) 
+    * postfix : a method without arguments can be called without the . (not allowed in scala 3 )
 
