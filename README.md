@@ -7,3 +7,5 @@
 
     * methods in scala are left associative normally , they start evaluating from left to right
     * every method that end with : is right associative , it staret from right to left 
+
+2 - if statments are expression that outputs values , so we can assign them to a variable 
