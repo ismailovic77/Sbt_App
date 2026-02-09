@@ -9,3 +9,9 @@
     * every method that end with : is right associative , it staret from right to left 
 
 2 - if statments are expression that outputs values , so we can assign them to a variable 
+
+3- For loops use a generator (<-) , it can also include next to the filters needed 
+
+4- While loops are simple as well => while( cdt) {} 
+
+5- Do while loops => do { } while (cdt)

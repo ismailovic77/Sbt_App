@@ -22,5 +22,15 @@ class Chapter_3 (val value : Int){
         configFilePath
     }
 
+    def FilterBreeds(Breeds : List[String]) = {
+        val FilteredBreeds = for {
+            breed <- Breeds
+            if breed.contains("Terrier")
+            if !breed.contains("Yorkshire")
+        } yield breed
+
+        FilteredBreeds
+    }
+
 
 }
