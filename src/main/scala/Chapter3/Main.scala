@@ -1,5 +1,6 @@
 package Chapter3
 import java.io._
+import java.util.Calendar
 
 object Main extends App {
     println("\n")
@@ -31,4 +32,33 @@ object Main extends App {
     println("")
     for (i <- 1 until 10 ) print(i) // does not include 10
     println("")
+
+
+    // pattern matching
+    println("")
+    println("*********** start on pattern matching **************")
+    println("")
+    val l = List(true, false , "test")
+    PatternMatching.matchOnValue(l)
+    PatternMatching.matchOnVariable()
+    PatternMatching.matchOnList()
+    PatternMatching.matchOnType()
+
+    println("")
+    println("*********** Try catch  **************")
+    println("")
+
+    val Then = null
+    val now = Calendar.getInstance()
+
+    try {
+        now.compareTo(Then)
+    } catch {
+        case e: NullPointerException => println("One was null "); System.exit(-1)
+        case unknown => println("Unknown eexceprion : " + unknown);System.exit(-1)
+    } finally {
+        println("it all worked out ")
+        System.exit(0)
+    }
+
 }

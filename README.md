@@ -15,3 +15,19 @@
 4- While loops are simple as well => while( cdt) {} 
 
 5- Do while loops => do { } while (cdt)
+
+6- Still have some notes on the pattern matching and also the Enumeration , (questions like when should it be used , regex for matching , the@ annotation )
+
+## Pattern Matching 
+
+1- I put some examples on matching , we can also do matching on tuples , and get the value of the elements in the tuples , 
+2- we have matching on case clases (here the matching is like matching on the type since the case class is basically a type , but it also checks the values passed to the constructor of the case class )
+3- Matchin on regular expressions , (here there is the concept of extractors that I need to check in more detail )
+
+4 - Another concept that needs more of a deep dive is : binding nested nested variables in case matches
+
+## Try catch
+ 
+ The try catch is used the same way as the matching pattern 
+
+ ## Enumerations 
